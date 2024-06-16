@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.main {
+    margin: 0 10vw;
+}
+
+.main h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 0 2.2px 0;
+    text-align: center;
+}
+
+.main .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15vh 0;
+    width: 100%;
+}
+
+.main h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.main .profile img {
+    background: #f8f8f8;
+    border-radius: 100%;
+    width: 400px;
+}
+
+.main .profile .personal-info .wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.main .profile .personal-info .wrap div {
+    width: 50%;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.main .profile .personal-info .wrap div h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.main .container {
+    display: inline-flex;
+}
+
+.main .container .achievement div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px 0 ;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.main .container .achievement div strong {
+    font-size: 1.2rem;
+}
+
+.main .container .achievement div img {
+    display: none;
+    position: fixed;
+    top: 3.5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60%;
+}
+
+.main .container .achievement span {
+    display: none;
+    position: fixed;
+    top: 3.5%;
+    right: 15vw;
+    margin: auto;
+    background: #000000;
+    color: #ffffff;
+    font-weight: bolder;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.main .container .achievement div input {
+    align-self: flex-start;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 0px 30px;
+    margin-top: 10px;
+}
+
+.main .container .achievement div input:hover {
+    background: #ffffff;
+    color: #000000;
+}
+.main .container .box {
+    margin-left: 50px;
+}
+
+.main .container .box .education div {
+    margin-top: 25px;
+} 
+
+.main .container .box .education div span {
+    font-weight: bold;
+}
+
+.main .container .box .skills {
+    margin-top: 2vw;
+}
+
+.main .container .box .skills ul {
+    margin-top: 25px;
+}
+
+.main .container .box .skills ul li {
+    list-style: inside;
+}
+
+@media screen and (max-width: 1024px) {
+    .main .profile img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .main .profile .personal-info .wrap {
+        display: initial;
+    }
+
+    .main .container .achievement div img {
+        width: 100%;
+    }
+
+    .main .container .achievement span {
+        font-size: 2rem;
+        padding: 3px 15px;
+        top: auto;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main h2 {
+        font-size: 2rem;
+    }
+
+    .main .profile .personal-info {
+        margin-bottom: 5vh;
+    }
+
+    .main .profile .personal-info h2 {
+        margin-top: 50px;
+    }
+
+    .main .profile {
+        display: initial;
+    }
+
+    .main .profile .personal-info .wrap {
+        display: flex;
+    }
+
+    .main .profile img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    .main .container {
+        margin-top: 10vh;
+    }
+
+    .main .container .achievement span {
+        font-size: 1rem;
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .main {
+        margin: 0;
+    }
+
+    .main h1 {
+        display: block;
+        margin: auto;
+        width: 70%;
+        font-size: 2rem;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main .profile img {
+        width: 200px;
+    }
+
+    .main .profile .personal-info {
+        margin-bottom: 0;
+    }
+
+    .main .profile .personal-info .wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .main .profile .personal-info .wrap div {
+        margin-top: 0;
+    }
+
+    .main .profile .personal-info .wrap div h3 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .main .container {
+        display: block;
+        padding: 20px;
+        margin-top: 7vh;
+    }
+
+    .main .container .box {
+        margin: 0;
+    }
+
+    .main .container .box .skills {
+        margin-top: 8vw;
+    }
+
+    .main .container .achievement span {
+        bottom: 50%;
+    }
+}
