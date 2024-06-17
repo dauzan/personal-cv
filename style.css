@@ -93,7 +93,7 @@
     font-weight: bolder;
     width: fit-content;
     padding: 5px 12px;
-    border-radius: 100%;
+    border-radius: 20%;
     cursor: pointer;
 }
 
@@ -150,6 +150,8 @@
 
     .main .container .achievement div img {
         width: 100%;
+        top: 0;
+        bottom: 0;
     }
 
     .main .container .achievement span {
@@ -159,7 +161,7 @@
         right: 0;
         left: 0;
         margin: auto;
-        bottom: 35%;
+        bottom: 17vh;
     }
 }
 
@@ -231,19 +233,23 @@
     }
 
     .main .profile .personal-info .wrap {
-        flex-direction: column;
-        align-items: center;
         text-align: center;
-        margin-top: 50px;
+        padding: 20px;
+        margin-top: 30px;
     }
 
     .main .profile .personal-info .wrap div {
         margin-top: 0;
+        width: 50%;
     }
 
     .main .profile .personal-info .wrap div h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding-bottom: 10px;
+    }
+
+    .main .profile .personal-info .wrap div p {
+        font-size: 0.8rem;
     }
 
     .main .container {
@@ -260,7 +266,19 @@
         margin-top: 8vw;
     }
 
+    .main .container .achievement div strong {
+        font-size: 1rem;
+    }
+
+    .main .container .achievement div input {
+        font-size: 0.8rem;
+    }
+
     .main .container .achievement span {
-        bottom: 50%;
+        bottom: 27vh;
+    }
+
+    .main .container .box .skills ul {
+        padding: 0 10px 20px 10px;
     }
 }
